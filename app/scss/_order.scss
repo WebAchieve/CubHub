@@ -1,0 +1,88 @@
+.orderpage{
+    padding-top: 50px;
+    &-item{
+        width: 100%;
+        background-color: #F3F3F3;
+        height: 67px;
+        border-radius: 33.5px;
+        padding-left: 40px;
+        color: #717171;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        input{
+            background-color: #F3F3F3;
+            border: none;
+            outline: none;
+            width: 100%;
+            
+        }
+        
+        i{
+            padding-top: 20px;
+            padding-right: 20px;
+            color: $yellow;
+        }
+        
+        
+    }
+    select{
+        border: none;
+        outline: none;
+        padding-right: 20px;
+        margin-bottom: 30px;
+    }
+    &-input{
+        width: 100%;
+        background-color: #F3F3F3;
+        height: 67px;
+        border-radius: 33.5px;
+        padding-left: 40px;
+        color: #717171;
+        font-size: 14px;
+        font-weight: 600;
+        border: none;
+        outline: none;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    &-agree{
+        margin-bottom: 30px;
+        label{
+            position: relative;
+            padding-left: 40px;
+            padding-top: 5px;
+            cursor: pointer;
+            &::before{
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 30px;
+                height: 30px;
+                border: 0px solid #C3C3C3;
+                border-radius: 100%;
+                background: #F3F3F3;
+            }
+            &::after{
+                content: '';
+                width: 15px;
+                height: 15px;
+                background: #FFC000;
+                position: absolute;
+                top: 7.5px;
+                left: 7.5px;
+                border-radius: 100%;
+                transition: all 0.2s ease;
+                opacity: 0;
+            }
+        }
+        
+       
+    }
+    &-agree.active{
+        label::after{
+            opacity: 1;
+        }
+    }
+}

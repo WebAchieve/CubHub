@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>YellowCab</title>
+  <link rel="icon" type="image/png" href="/img/taxi.png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body  >
+  
+  <div class="preloader">
+    <div id="loader-container">
+    <p id="loadingText">Loading</p>
+  </div>
+  </div>
+  
+ <header>
+  <div class="main-bg" id="main-bg" style="background-image: url(img/nav.png);">
+    <div class="main-car">
+      <img class="car" src="img/car.png" alt="car">
+      <img  class="splash" src="img/car-splash.png" alt="">
+    </div>
+      <div class="container">
+        <nav class="navbar">
+     <div class="navbar-nav">
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="navbar-box">
+        <ul class="navbar-menu">
+        <li><a href="#" class="navbar-link active">Главаня</a></li>
+        <li><a href="about.html" class="navbar-link">О нас</a></li>
+        <li><a href="order.html" class="navbar-link">Заказать такси</a></li>
+        <li><a href="service.html" class="navbar-link">Услуги</a></li>
+        <li><a href="blog.html" class="navbar-link">Блог</a></li>
+        <li><a href="contact.html" class="navbar-link">Связаться</a></li>
+        <div class="navbar-menu__img">
+           <a href="#"><img class="app" src="img/app.png" alt="android"> </a>
+          <a href="#"><img class="app" src="img/google.png" alt="google"></a>
+        </div>
+         
+        
+      </ul>
+      
+      </div>
+      
+      <div class="navbar-phone">
+        <a href="#" class="navbar-phone__link">
+          <div class="navbar-phone__icon">
+             <i class="flaticon-phone"></i>
+          </div>
+         
+          <div class="navbar-phone__text">
+            <span>888 888 0000</span>
+            <span>24/7</span>
+          </div>
+          
+        </a>
+      </div>
+     </div>
+        </nav>
+        <div class="main-title">
+          <img src="img/logo.png" alt="logo">
+          <p>Yellow <span>Cab</span></p>
+        </div>
+      </div>
+  </div>
+ </header>
+ <main>
+  <section class="offer">
+    <div class="container">
+      <div class="row offer-content">
+          <div class="col-lg-6 pt-5">
+        <div class="offer-text">
+          <span>Лучшее такси в городе</span>
+          <h3 >Не дорого и быстро - это YellowCab</h3>
+          <p>Мы предлагаем услуги такси высокого качества .Надежные и быстрые поезки ,а главное за доступную цену.
+            Новейший автопарк и водители-профессионалы доставят вас быстро и безопастно в любую точку города.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 p-0">
+        <form class="order">
+          <h3 class="order-title">Заказать <span>Yellow</span>Cab </h3>
+          <div class="order-list">
+                <div class="row">
+            <div class="col-md-6">
+              <input type="text" name="name" placeholder="Имя"><i class=" icon flaticon-social"></i>
+            </div>
+            <div class="col-md-6">
+              <input type="text" name="tel" placeholder="Телефон"><i class=" icon flaticon-phone-1"></i>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" placeholder="Отправление"><i class=" icon flaticon-pin"></i>
+              </div>
+              <div class="col-md-6">
+                <input type="text" placeholder="Прибытие"><i class=" icon flaticon-pin"></i>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <input type="date" id="start" name="trip-start"
+                value="2020-04-22" 
+                min="2020-04-22" max="2022-04-22"><i class=" icon flaticon-calendar"></i>
+              </div>
+              <div class="col-md-6">
+                <input type="time" value="12:00" placeholder="Время"><i class=" icon flaticon-clock"></i>
+              </div>
+            </div>
+            <select class="select" >
+              <option>Класс автомобиля</option>
+              <option>Стандарт</option>
+              <option>Бизнесс</option>
+              <option>VIP</option>
+              <option>Мини-вэн</option>
+            </select>
+            <div class="offer-button">
+              <button data-hover="ЗАКАЗАТЬ"><div>НАЖАТЬ</div></button>
+            </div>
+            
+          </div>
+      
+        </form>
+      </div>
+      </div>
+    
+    </div>
+  </section>
+  <section class="servises">
+    <div class="titles">
+      <h2 class="main-title">Наши</h2>
+    <span class="main-sub">услуги</span>
+    </div>
+    <div class="servises-box">
+   <div class="col-md-4 p-0 servises-img wow fadeInLeftBig" data-wow-delay="100ms">
+    <img src="img/service-1.png"  alt="car">
+  </div>
+  <div class="col-lg-8  col-md-12">
+    <div class="container">
+      <div class="row cler">
+      <div class="col-md-6 p-3">
+        <div class="servises-item">
+          <div class="servises-item__img"><i class="flaticon-vacations"></i></div>
+          <div class="servises-item__text">
+            <span>Заказ отеля</span>
+            <p>
+              Если вам нужен комфортабельный отель, наши операторы 
+              закажут его для вас, и возьмут такси по адресу</p>
+              <a href="#">Читать дальше ...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 p-3">
+        <div class="servises-item">
+          <div class="servises-item__img"><i class="flaticon-travelling"></i></div>
+          <div class="servises-item__text">
+            <span>Доставака багажа</span>
+            <p>
+              Вы можете путешествовать с большим количеством багажа или багаж мы перевозим отдельно</p>
+              <a href="#">Читать дальше ...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 p-3">
+        <div class="servises-item">
+          <div class="servises-item__img"><i class="flaticon-transportation"></i></div>
+          <div class="servises-item__text">
+            <span>Трансфер из аэропорта</span>
+            <p>
+              Мы доставим вас быстро и с комфортом из аэропорта в любую точку вашего города</p>
+              <a href="#">Читать дальше ...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 p-3">
+        Еще больше услуг вы можете узнать на странице "Услуги"
+        <div class="servises-btn pt-5">
+          <button data-hover="Услуги"><div>НАЖАТЬ</div></button>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+    </div>
+    
+    
+  
+  </section>
+ <section class="download " id="download" style="background-image: url(img/wish.png);">
+  
+   <div class="container">
+    <div class="titles" >
+      <h2 class="main-title">Скачайте</h2>
+    <span class="main-sub" style="color: #fff;">Наше приложение</span>
+    </div>
+    <div class="row">
+      <div class="col-md-8 pt-5 wow fadeInUpBig" data-wow-delay="200ms">
+        <div class="download-item">
+          <div class="col-2"><span>01.</span></div>
+          <div class="col-10">
+            <h5>Бытрый заказ</h5>
+            <p>Заказывайте быстро с помощью приложения в любую точку города.</p>
+          </div>
+        </div>
+        <div class="download-item">
+          <div class="col-2"><span>02.</span></div>
+          <div class="col-10">
+            <h5>GPS поиск</h5>
+            <p>Таксист быстро найдет ваше положение, а вы сможете отслеживать перемещение машины</p>
+          </div>
+        </div>
+        <div class="download-item">
+          <div class="col-2"><span>03.</span></div>
+          <div class="col-10">
+            <h5>Бонусы к поездкам</h5>
+            <p>Накапливайте бонусы за каждую поездку </p>
+          </div>
+        </div>
+        <div class="download-item">
+          <div class="col-2"><span>04.</span></div>
+          <div class="col-10">
+            <h5>24/7</h5>
+            <p>Сервис доступен крулосуточно для вашего удобства </p>
+          </div>
+        </div>
+        <div class="download-item">
+          <a href="#"><img class="app" src="img/app.png" alt="android"> </a>
+          <a href="#"><img class="app" src="img/google.png" alt="google"></a>
+        
+        </div>
+      </div>
+     
+      <div class="col-md-4 d-flex justify-content-center">
+        <img class="download-phone" src="img/phone1.png" alt="phone">
+      </div>
+    </div>
+   </div>
+ </section>
+ <section class="tarif">
+   <div class="container">
+    <div class="titles">
+      <h2 class="main-title">Нашы</h2>
+    <span class="main-sub" >Тарифы</span>
+   </div>
+   <div class="row">
+     <div class="col-xl-3 col-sm-6 pt-3">
+      <div class="tarif-item">
+        <div class="tarif-img">
+          <img src="img/tariff-1.png" alt="car">
+        </div>
+        
+        <ul>
+          <li>
+            <span>Класс автомобиля</span>
+            <span>Стандарт</span>
+          </li>
+          <li>
+            <span>Количество пассажиров</span>
+            <span>4</span>
+          </li>
+          <li>
+            <span>Тариф</span>
+            <span>2$ / км</span>
+          </li>
+        </ul>
+        <a class="tarif-btn" href="#">Заказать</a>
+      </div>
+     </div>
+     <div class="col-xl-3 col-sm-6 pt-3">
+      <div class="tarif-item">
+        <div class="tarif-img">
+           <img src="img/tariff-2.png" alt="car">
+        </div>
+       
+        <ul>
+          <li>
+            <span>Класс автомобиля</span>
+            <span>Бизнесс</span>
+          </li>
+          <li>
+            <span>Количество пассажиров</span>
+            <span>4</span>
+          </li>
+          <li>
+            <span>Тариф</span>
+            <span>3.5$ / км</span>
+          </li>
+        </ul>
+        <a class="tarif-btn" href="#">Заказать</a>
+      </div>
+     </div>
+     <div class="col-xl-3 col-sm-6 pt-3">
+      <div class="tarif-item">
+        <div class="tarif-img">
+          <img src="img/tariff-3.png" alt="car">
+        </div>
+        
+        <ul>
+          <li>
+            <span>Класс автомобиля</span>
+            <span>VIP</span>
+          </li>
+          <li>
+            <span>Количество пассажиров</span>
+            <span>4</span>
+          </li>
+          <li>
+            <span>Тариф</span>
+            <span>5$ / км</span>
+          </li>
+        </ul>
+        <a class="tarif-btn" href="#">Заказать</a>
+      </div>
+     </div>
+     <div class="col-xl-3  col-sm-6 pt-3">
+       <div class="tarif-item">
+        <div class="tarif-img">
+          <img src="img/tariff-4.png" alt="car">
+        </div>
+        
+        <ul>
+          <li>
+            <span>Класс автомобиля</span>
+            <span>Мини-вэн</span>
+          </li>
+          <li>
+            <span>Количество пассажиров</span>
+            <span>8</span>
+          </li>
+          <li>
+            <span>Тариф</span>
+            <span>7$ / км</span>
+          </li>
+        </ul>
+         <a class="tarif-btn" href="#">Заказать</a>
+      </div>
+     </div>
+   </div>
+ </section>
+ <section class="testimonials " style="background-image: url(img/testimonials.png);">
+   <div class="container">
+    <div class="titles">
+      <h2 class="main-title">Отзывы</h2>
+      <div class="testimonials-sub">
+        наших клиентов
+      </div>
+    </div>
+    <div class="prev"></div>
+    <div class="next"></div>
+      <div class="testimonials-slider">
+        <div class="testimonials-slider__item">
+          <span>,,</span>
+          <p>" Я с большим удовольствием пользуюсь такси YellowCab.
+            Быстро и надежно путешествуешь куда тебе нужно.А с таксистом приятно поговорить и скоротать
+            время во время поездки.ребята - вы супер!!! "</p>
+            <div class="testimonials-slider__content">
+                 <div class="testimonials-slide__img">
+                <img src="img/face.png" alt="face">
+              </div>
+              <div class="testimonials-slider__text">
+                <div class="name">Сергей трофимов</div>
+                <div class="work">Мэнеджер</div>
+              </div>
+             
+            </div>
+        </div>
+        <div class="testimonials-slider__item">
+          <span>,,</span>
+          <p>" Я с большим удовольствием пользуюсь такси YellowCab.
+            Быстро и надежно путешествуешь куда тебе нужно.А с таксистом приятно поговорить и скоротать
+            время во время поездки.ребята - вы супер!!! "</p>
+            <div class="testimonials-slider__content">
+                 <div class="testimonials-slide__img">
+                <img src="img/face.png" alt="face">
+              </div>
+              <div class="testimonials-slider__text">
+                <div class="name">Сергей трофимов</div>
+                <div class="work">Мэнеджер</div>
+              </div>
+             
+            </div>
+        </div>
+        <div class="testimonials-slider__item">
+          <span>,,</span>
+          <p>" Я с большим удовольствием пользуюсь такси YellowCab.
+            Быстро и надежно путешествуешь куда тебе нужно.А с таксистом приятно поговорить и скоротать
+            время во время поездки.ребята - вы супер!!! "</p>
+            <div class="testimonials-slider__content">
+                 <div class="testimonials-slide__img">
+                <img src="img/face.png" alt="face">
+              </div>
+              <div class="testimonials-slider__text">
+                <div class="name">Сергей трофимов</div>
+                <div class="work">Мэнеджер</div>
+              </div>
+             
+            </div>
+        </div>
+        
+      </div>
+   
+   </div>
+ </section>
+ <section>
+   <div class="blog">
+    <div class="titles">
+      <h2 class="main-title">Будь в курсе</h2>
+    <span class="main-sub" >Наши статьи</span>
+   </div>
+     <div class="container">
+       <div class="row d-flex">
+        <div class="col-lg-6 p-3 wow fadeInLeftBig blog-item" data-wow-delay="100ms">
+          <div class="blog-inner">
+            
+            <img src="img/blog.jpg" alt="blog">
+            <a href="#" class="blog-inner__link"><i class="flaticon-tools-and-utensils"></i></a>
+          </div>
+          <div class="blog-content">
+         <div class="blog-content__date">20 фев. 2020</div>
+         <div class="blog-content__user">Admin</div>
+         <div class="blog-content__coment"><span>17</span>
+          
+        </div>
+         <div class="blog-content__views"><span>43</span></div>
+       </div>
+       <h3>В ненастную погоду в комфортном автомобиле</h3>
+       <p>Если на улице дождь и ветер так приятно отправиться в путешествие на автомобиле....</p>
+       </div>
+        <div class="col-lg-6 second wow fadeInRightBig blog-item" data-wow-delay="100ms">
+          <div class="row d-flex flex-wrap-reverse p-3">
+            <div class="col-md-6"><div class="blog-content">
+              <div class="blog-content__date">16 мар. 2020</div>
+              <div class="blog-content__user">Admin</div>
+              <div class="blog-content__coment"><span>15</span></div>
+              <div class="blog-content__views"><span>67</span></div>
+            </div>
+            <h3>Сколько стоит поездка за город на дачу.</h3>
+          </div>
+            <div class="col-md-6 ">
+              <div class="blog-inner">
+            
+                <img src="img/blog2.jpg" alt="blog">
+                <a href="#" class="blog-inner__link"><i class="flaticon-tools-and-utensils"></i></a>
+              </div>
+              </div>
+          </div>
+          <div class="row d-flex flex-wrap-reverse p-3">
+            <div class="col-md-6 "><div class="blog-content">
+              <div class="blog-content__date">13 сен. 2020</div>
+              <div class="blog-content__user">Admin</div>
+              <div class="blog-content__coment"><span>7</span></div>
+              <div class="blog-content__views"><span>13</span></div>
+            </div>
+            <h3>Такси или общественный транспорт в городе?</h3>
+          </div>
+            <div class="col-md-6"> 
+              <div class="blog-inner">
+            
+                <img src="img/blog3.jpg" alt="blog">
+                <a href="#" class="blog-inner__link"><i class="flaticon-tools-and-utensils"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+       </div>
+       
+   </div>
+ </section>
+ </main>
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3  col-md-6 footer-about">
+      <h4>О нас</h4>
+      <p>Служба YellowCab доставит вас в любую точку города быстро,комфортно а главное безопастно.</p>
+      <div class="footer-socilas">
+        <a href="#"><i class="flaticon-brands-and-logotypes"></i></a>
+        <a href="#"><i class="flaticon-logotype"></i></a>
+        <a href="#"><i class="flaticon-connections"></i></a>
+      </div>
+      </div>
+   <div class="col-lg-3 col-md-6">
+      <div class="footer-menu">
+        <h4>меню</h4>
+        <ul class="footer-menu__list">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Заказать такси</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Блог</a></li>
+          <li><a href="#">Связаться</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="footer-contakt">
+         <h4>Связаться</h4>
+      <ul>
+        <li><i class="flaticon-pin"></i><span>Киев ул.Неизвестая д.34</span></li>
+        <li><i class="flaticon-phone-1"></i><span>+888 888 0000</span></li>
+        <li><i class="flaticon-multimedia"></i><span>YellowCab.gmail.com</span></li>
+      </ul>
+      </div>
+     
+    </div>
+    <div class="col-lg-3 col-md-6">
+      <div class="footer-mail">
+        <h4>Новости</h4>
+      <p>Подпишитесь,чтобы быть в курсе всех новостей и оюновлений в компании. </p>
+      <input type="text" name="email" placeholder="email"> <a href="#"><i class=" icon flaticon-multimedia"></i></a></i>
+      </div>
+      
+    </div>
+  </div>
+
+    </div>
+     <div class="footer-line">
+    <div class="container d-flex justify-content-between">  
+    <div class="footer-line__left">   <span>Yellow</span> Cab © 2020</div>
+    <div class="footer-line__right">  <img src="img/logo.png" alt="logo"></div>
+   </div>
+  </div>
+ </footer>
+ <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="flaticon-up-arrow"></i></a>
+ <script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+$yellow: #ffc61a;
+$white: #fff;
+$dark: #171717;
+
+.preloader{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: $dark;
+  z-index: 200;
+  
+}
+#loader-container {
+  width: 200px;
+  height: 200px;
+  color: $dark;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid $dark;
+  border-radius: 50%;
+  -webkit-animation: borderScale 1s infinite ease-in-out;
+  animation: borderScale 1s infinite ease-in-out;
+}
+
+#loadingText {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-bottom: 62px;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: $yellow;
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+@keyframes borderScale {
+  0% {
+    border: 5px solid $yellow;
+  }
+  50% {
+    border: 25px solid $yellow;
+  }
+  100% {
+    border: 5px solid $yellow;
+  }
+}
+.titles{
+  text-align: center;
+  text-transform: uppercase;
+  padding: 30px 0;
+}
+.main-title{
+  color: $yellow;
+  font-size: 2em;
+}
+.main-sub{
+  font-size: 3em;
+  color: $dark;
+  font-weight: 700;
+}
+  ///бургер
+  .menu-icon {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 60px;
+    left: 40px;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    display: none;
+  }
+  .menu-icon span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0, .2);
+    background: $dark;
+    transition: .5s;
+  }
+  .menu-icon.active span:nth-child(2) {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  .menu-icon.active span:nth-child(1) {
+    transform: rotateY(180deg) rotateZ(45deg) translate(5px, 5px);
+  }
+  .menu-icon.active span:nth-child(3) {
+    transform: rotateY(180deg) rotateZ(-45deg) translate(6px, -7px);;
+  }
+  ///бургер
+  ///кнопка
+  button:hover{cursor: pointer}
+    button {
+      background: $dark; 
+      outline: none;
+      position: relative;
+      border: 2px solid $dark;
+      padding: 15px 50px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    /*button:before (attr data-hover)*/
+    button:hover:before{opacity: 1; transform: translate(0,0);}
+    button:before{
+      content: attr(data-hover);
+      position: absolute;
+      top: 1.1em; left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-weight: 800;
+      font-size: .8em;
+      opacity: 0;
+      transform: translate(0,-100%);
+      transition: all .3s ease-in-out;
+      color: $yellow;
+    }
+      /*button div (button text before hover)*/
+      button:hover div{opacity: 0; transform: translate(0,100%)}
+      button div{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 800;
+        font-size: .8em;
+        transition: all .3s ease-in-out;
+        color: $yellow;
+      }
+
+   ///кнопка
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+      transition: -webkit-transform 1.4s 0.6s linear;
+      transition: transform 1.4s 0.6s linear;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+      transform: translateY(0px);
+    }
+  }
+///scroll
+.scroll-to-top {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: #FFC000;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 50;
+  text-align: center;
+  transition: all .4s ease;
+  border-radius: 50%;
+  display: none;
+}
+.scroll-to-top:after, .scroll-to-top:before {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #FFC000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0.9s;
+  content: "";
+  position: absolute;
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.6);
+  animation: ripple 3s infinite;
+  transition: all .4s ease;
+}
+.scroll-to-top:after {
+  animation-delay: .6s;
+
+}
+@keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 40px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+.scroll-to-top i {
+  font-size: 18px;
+  line-height: 45px;
+  color: #111111;
+  position: relative;
+  z-index: 10;
+}
+.scroll-to-top:hover {
+  background: #111111;
+}
+.scroll-to-top:hover:before, .scroll-to-top:hover:after {
+  background-color: #111111;
+}
+.scroll-to-top:hover i {
+  color: #FFC000;
+}
+///scroll

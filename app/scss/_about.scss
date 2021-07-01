@@ -1,0 +1,123 @@
+.about {
+    &-title {
+        color: $white;
+        text-align: center;
+        padding-top: 40px;
+
+        span {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 4em;
+            margin: 0;
+            padding-bottom: 5px;
+            color: $yellow;
+        }
+
+        &__link {
+            color: $yellow;
+            border: 1px solid $yellow;
+            padding: 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            transition: .5s ease;
+        }
+
+        &__link:hover {
+            background-color: $yellow;
+            color: $dark;
+
+        }
+
+        &__item:nth-child(3) {
+            padding-bottom: 30px;
+        }
+    }
+
+}
+
+.aboutpage {
+    padding: 100px 0;
+
+    span,
+    p {
+        color: grey;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    p {
+        line-height: 30px;
+    }
+
+    img {
+        border-radius: 10px;
+        width: 100%;
+        animation: jumpabout 3s linear alternate infinite;
+    }
+}
+
+.aboutpage-intro::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: $yellow;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@keyframes jumpabout {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        transition: -webkit-transform 1.4s 0.6s linear;
+        transition: transform 1.4s 0.6s linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+}
+
+.cars {
+    background-color: $yellow;
+    padding: 50px 0;
+
+    img {
+        width: 100%;
+    }
+}
+
+.acordeon {
+    height: 360px;
+
+    &-item {
+        &__title {
+            border: 3px solid $dark;
+            color: $dark;
+            padding: 10px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        &__text {
+            color: $dark;
+            display: none;
+
+        }
+
+        &__title.active {
+            background-color: $dark;
+            color: $white;
+            transition: .5s ease;
+        }
+    }
+}
